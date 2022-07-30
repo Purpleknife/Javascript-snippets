@@ -17,7 +17,7 @@ const calculateMultipliers = function(array) {
     i++;
   }
   return output;
-}
+};
 
 // => Output: [7, 18, 9, 4, 7, 6, 9, 16, 7, 2]
 
@@ -34,17 +34,17 @@ const checkDoubleDigit = function(array) {
       moreThanOneDigit.push(nb);
     }
     if (nbToStr.length > 1 && nb > 0) { //More than 1 digit.
-      for (var i = 0; i < nbToStr.length; i++) {
+      for (let i = 0; i < nbToStr.length; i++) {
         sum += parseInt(nbToStr.charAt(i), 10);
         
       }
-      moreThanOneDigit.push(sum); 
+      moreThanOneDigit.push(sum);
       sum = 0; //Reset sum for next nb with more than 1 digit.
     }
    
   }
   return moreThanOneDigit;
-}
+};
 
 //console.log(checkDoubleDigit([7, 18, 9, 4, 7, 6, 9, 16, 7, 2]));
 //=> [7, 9, 9, 4, 7, 6, 9, 7, 7, 2]
@@ -59,7 +59,7 @@ const calculateSumDigits = function(array) {
   }
 
   return total;
-}
+};
 
 // [7, 9, 9, 4, 7, 6, 9, 7, 7, 2] => 67.
 
